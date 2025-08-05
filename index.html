@@ -4,29 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POKEMONES</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: yellow;
+        }
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 8px;
+        }
+        @font-face {
+            font-family: 'PokemonFont';
+            src: url('fonts/pokemon.ttf') format('truetype');
+        }
+        h1 {
+            font-family: 'PokemonFont', sans-serif;
+            text-align: center;
+            color: rgb(5, 10, 81);
+            font-size: 80px;
+        }
+        .arceous, .gyarados, .haxorus, .rayquaza {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(5, 10, 81);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .video {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .center {
+            text-align: center;
+            font-family: pokemonFont, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="" alt="">
+        <h1>Pokemones Mamones</h1>
     </header>
-    <section>
-        <img src="images/arceus.webp" alt="Arceus" width="100px
-        ">
+    <div class="parent">
+        <section class="arceous">
+            <img src="images/arceus.webp" alt="Arceus" width="200px">
+        </section>
+        <section class="gyarados">
+            <img src="images/gyarados.webp" alt="Gyarados" width="200px">
+        </section>
+        <section class="haxorus">
+            <img src="images/haxorus.png" alt="Haxorus" width="200px">
+        </section>
+        <section class="rayquaza">
+            <img src="images/rayquaza.png" alt="Rayquaza" width="200px">
+        </section>
+    </div>
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TEvnRwT0QxE?si=NS3nk5Qct9HHhoOy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
-    <section>
-        <img src="images/gyarados.webp" alt="Gyarados" width="100px
-        ">
-    </section>
-    <section>
-        <img src="images/haxorus.png" alt="Haxorus" width="100px
-        ">
-    </section>
-    <section>
-        <img src="images/rayquaza.png" alt="Rayquaza" width="100px
-        ">
-    </section>
+    <br>
+    <br>
     <footer>
-        Todos los derechos reservados 2025
+        <h2 class="center">
+            Todos los derechos reservados 2025
+        </h2>
     </footer>
 </body>
 </html>
